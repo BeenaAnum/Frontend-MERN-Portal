@@ -19,7 +19,8 @@ function App() {
     setMessage({ type: '', text: '' });
    try {
       // Deployed Backend ka URL env variable se aayega
-      const apiUrl = import.meta.env.VITE_API_URL;
+      // const apiUrl = import.meta.env.VITE_API_URL;
+      const apiUrl = "https://backend-mern-portal.vercel.app";
       const res = await axios.post(`${apiUrl}/api/admission`, formData);
       
       setMessage({ type: 'success', text: res.data.message });
