@@ -1,0 +1,118 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+.admission-page {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1a0b2e, #020617 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+/* Card */
+.form-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 45px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+    transition: 0.3s ease;
+}
+
+.form-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Title */
+.title-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Input */
+.input-style {
+    width: 100%;
+    padding: 12px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    color: #e2e8f0;
+    outline: none;
+    transition: 0.25s;
+}
+
+.input-style:focus {
+    border-color: #a855f7;
+    box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.25);
+}
+
+/* Button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #9333ea, #ec4899);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Alerts */
+.alert {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+.success { 
+    background: rgba(16, 185, 129, 0.15); 
+    color: #34d399; 
+}
+
+.error { 
+    background: rgba(239, 68, 68, 0.15); 
+    color: #f87171; 
+}
